@@ -1,0 +1,41 @@
+from flask import Flask, render_template, jsonify
+from flask_sqlalchemy import SQLAlchemy
+import os
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'dev-secret-key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///easyeats.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+# Basic User model
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    password_hash = db.Column(db.String(60), nullable=False)
+    dietary_preferences = db.Column(db.Text)
+
+# Basic Ingredient model  
+class Ingredient(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    name = db.Column(db.String(100), nullable=False)
+    quantity = db.Column(db.String(50))
+
+@app.route('/')
+def index():
+    return jsonify({'message': 'EasyEats API is running!', 'status': 'success'})
+
+@app.route('/api/health')
+def health_check():
+    return jsonify({'status': 'healthy', 'service': 'EasyEats API'})
+
+@app.route('/api/users')
+def get_users():
+    return jsonify({'users': [], 'message': 'User endpoint ready'})
+
+if __name__ == '__main__':
+    with app.app_context():
+        db.create_all()
+    app.run(debug=True)

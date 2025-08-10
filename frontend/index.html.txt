@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyEats - Smart Meal Planning</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>EasyEats</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pantry">My Pantry</a></li>
+                <li><a href="#meals">Meal Plans</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Smart Meal Planning Made Easy</h2>
+            <p>Turn your pantry into delicious, healthy meals</p>
+            <button id="get-started">Get Started</button>
+        </section>
+
+        <section id="features">
+            <div class="feature">
+                <h3>🥘 Pantry-to-Plate</h3>
+                <p>Smart meal suggestions from your ingredients</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Nutrition Tracking</h3>
+                <p>Detailed nutritional information for every meal</p>
+            </div>
+            <div class="feature">
+                <h3>🥗 Diet-Specific</h3>
+                <p>Personalized for your dietary needs</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
