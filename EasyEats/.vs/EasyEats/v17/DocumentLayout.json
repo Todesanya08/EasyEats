@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lafla\\OneDrive\\Documents\\GitHub\\EasyEats\\EasyEats\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE04ACE-BABA-432A-827A-55EAC4B6CF85}|EasyEats.pyproj|C:\\Users\\lafla\\OneDrive\\Documents\\GitHub\\EasyEats\\EasyEats\\EasyEats.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5CE04ACE-BABA-432A-827A-55EAC4B6CF85}|EasyEats.pyproj|solutionrelative:EasyEats.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EasyEats.py",
+              "DocumentMoniker": "C:\\Users\\lafla\\OneDrive\\Documents\\GitHub\\EasyEats\\EasyEats\\EasyEats.py",
+              "RelativeDocumentMoniker": "EasyEats.py",
+              "ToolTip": "C:\\Users\\lafla\\OneDrive\\Documents\\GitHub\\EasyEats\\EasyEats\\EasyEats.py",
+              "RelativeToolTip": "EasyEats.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-08-18T21:39:07.852Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
