@@ -6,7 +6,8 @@
     "type": "commonjs",
     "scripts": {
         "start": "node index.js",
-        "dev": "nodemon index.js"
+        "dev": "nodemon index.js",
+        "vercel-build": "cd ../easyeats-client && npm install && npm run build"
     },
     "dependencies": {
         "cors": "^2.8.5",
