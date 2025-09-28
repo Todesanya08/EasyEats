@@ -1,22 +1,21 @@
 {
-    "name": "server",
+    "name": "easyeats-server",
     "version": "1.0.0",
-    "description": "",
+    "description": "Backend server for EasyEats app (Sprint 1 & 2)",
     "main": "index.js",
+    "type": "commonjs",
     "scripts": {
-        "dev": "nodemon index.js",
-        "start": "node index.js"
+        "start": "node index.js",
+        "dev": "nodemon index.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
     "dependencies": {
         "cors": "^2.8.5",
-        "dotenv": "^17.2.1",
-        "express": "^5.1.0",
+        "dotenv": "^16.6.1",
+        "express": "^4.21.2",
         "node-fetch": "^2.7.0"
     },
     "devDependencies": {
-        "nodemon": "^3.1.10"
+        "eslint": "^9.34.0",
+        "nodemon": "^3.1.0"
     }
 }
